@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title> Ayush Agarwal </title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
+</head>
+
+<body>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar {
+            padding: 0.75rem 2rem 0.75rem 4rem !important;
+            font-size: 1.2rem;
+        }
+
+        .nav-link {
+            padding-left: : 2rem !important;
+            padding-right: : 2rem !important;
+        }
+
+        html,
+        body,
+        header,
+        #intro {
+            height: 100%;
+        }
+
+        @media (max-width: 740px) {
+
+            html,
+            body,
+            header,
+            #intro-section {
+                height: 100vh;
+
+            }
+        }
+
+        @media (min-width: 740px) {
+            .nav-item {
+                margin: 0 0px 0 25px
+            }
+
+
+        }
+
+        .top-nav-collapse {
+            background-color: #095C5C;
+        }
+
+        @media (max-width: 768px) {
+            .navbar:not(.top-nav-collapse) {
+                background-color: #095C5C;
+            }
+
+            .carousel-item img {
+                height: 200px !important;
+            }
+
+        }
+
+        @media (min-width: 800px) and (max-width: 850px) {
+            .navbar:not(.top-nav-collapse) {
+                background-color: #095C5C;
+            }
+        }
+
+        .nav-item i {
+            margin: 0 10px 0 0px;
+
+            font-size: 17px
+        }
+
+        .bg {
+            background: linear-gradient(198deg, rgba(28, 69, 105, 1), rgba(39, 108, 121, 0.5), rgba(40, 150, 136, 0.5), rgba(29, 193, 151, 0.8)), url(/images/header-bg.jpg);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .overlay {
+            background-color: rgba(39, 62, 84, 0.82)
+        }
+
+        .myintro {
+            background-color: rgba(0, 0, 0, 0.15);
+            border-radius: 25px 0px 25px 0px;
+        }
+
+        .dp {
+            height: 200px;
+            width: 200px;
+            background: url(/images/dp.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 100px;
+        }
+
+        .logo img {
+            height: 50px;
+            width: 50px;
+            filter: grayscale(70%);
+            margin-bottom: 5px;
+        }
+
+        .logo {
+            position: relative;
+            text-align: center;
+            font-size: 20px;
+
+        }
+
+        .logo .text,
+        img {
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .text {
+            opacity: 0;
+            padding: 10px 0 10px 0;
+            font-weight: 900;
+            color: #037065;
+        }
+
+        .logo:hover img {
+            opacity: 1;
+            filter: grayscale(0%);
+        }
+
+        .logo:hover .text {
+            opacity: 1;
+        }
+
+        .image-div {
+            overflow: hidden;
+        }
+
+        .card img {
+            height: 200px;
+            transition: transform .6s ease-in-out;
+
+        }
+
+        .card:hover img {
+            transform: scale(1.15);
+
+        }
+
+        .carousel-item img {
+            height: 400px;
+        }
+    </style>
+    <header>
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#" style="font-family: 'Playfair Display', serif;">
+                    <strong>Welcome!</strong> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <ul class="navbar-nav mr-auto smooth-scroll">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#intro"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#aboutme"><i class="fa fa-info-circle"
+                                        aria-hidden="true"></i>About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#myskills"><i class="fa fa-code" aria-hidden="true"></i>My
+                                    skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#myprojects"><i class="fa fa-database"
+                                        aria-hidden="true"></i>My projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#myhobbies"><i class="fa fa-music" aria-hidden="true"></i>My
+                                    Hobbies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contactme"><i class="fa fa-phone"
+                                        aria-hidden="true"></i>Contact Me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section id="intro">
+
+            <div class=" mask flex-center rgba-black-strong d-flex bg-dark justify-content-center align-items-center bg"
+                style="height:100%">
+
+                <div class="container myintro px-md-3 px-sm-0  text-center w-75 ">
+                    <h3 class="display-3 font-weight-bold white-text mb-0 introtext">Hello!! <br>I am Ayush</h3>
+                    <hr class="hr-light my-2 w-100 ">
+                    <h4 class=" subtext mt-2 mb-4 white-text introtext">I am a Programmer and Web Developer</h4>
+                </div>
+            </div>
+        </section>
+    </header>
+    <div id="aboutme">
+        <h1 class="mt-5" style="font-weight:bold;text-align:center;">About Me</h1>
+        <div class="d-flex container flex-column align-items-center   mt-5 aboutme">
+            <div class=" dp">
+            </div>
+            <p class="mt-5" style="text-align:center; font-size:18px; font-weight:400!important;">Hi there! I am Laxman,
+                a first year student currently doing B.Tech in Computer sceince and engineering. I like writing
+                efficient and "less time-consuming" codes.
+                As of now, I know Python, C and C++ but I would like to learn few other languages like Java, Javascript
+                etc. I'm really into web devlopment and I do it during leisure times. Also I'm looking forward to be a
+                freelancer in web developing soon.
+                What i know now is just few drops out of a huge ocean. In near future I would like to learn some more
+                advanced but intresting topics like Deep learning, AI/ML, Alogorithms etc.</p>
+        </div>
+    </div>
+    <div id="myskills" class="bg-light" style="height:auto;">
+        <h1 class="mt-5 pt-5" style="font-weight:bold;text-align:center;">My Skills</h1>
+        <div class="container mt-5 ">
+            <div class="row pt-md-2 pb-md-2" style="text-align:center;">
+                <div class="logo col-6 col-md-3  ">
+                    <img src="https://www.kindpng.com/picc/m/159-1595848_python-logo-png-transparent-background-python-logo-png.png"
+                        alt="" style="height:100px; width:100px;border-radius:100% ;object-fit: cover; ">
+                    <div class="text" style="text-align:center;">Python 3</div>
+                </div>
+                <div class="col-6  col-md-3 logo ">
+                    <img src="https://sdtimes.com/wp-content/uploads/2018/03/cpppp.png" alt=""
+                        style="height:100px;width:100px;object-fit: cover; ">
+                    <div class="text" style="text-align:center;">C++</div>
+                </div>
+                <div class="col-6 col-md-3  logo ">
+                    <img src="https://cdn.iconscout.com/icon/free/png-512/c-programming-569564.png" alt=""
+                        style="height:100px;width:100px;object-fit: cover;">
+                    <div class="text" style="text-align:center;">C</div>
+                </div>
+                <div class="col-6 col-md-3  logo ">
+                    <img src="https://www.pngjoy.com/pngm/269/5156412_mysql-logo-transparent-mysql-logo-png-square-hd.png"
+                        alt="" style="height:100px;width:100px;object-fit: cover;border-radius:100% ;">
+                    <div class="text" style="text-align:center;">MySQL</div>
+                </div>
+            </div>
+            <div class="row pt-md-2  pb-md-2 " style="text-align:center;">
+                <div class="col-6 col-md-3 logo ">
+                    <img src="https://i.ya-webdesign.com/images/html-5-logo-png-19.png" alt=""
+                        style="height:100px; width:100px;object-fit: cover; ">
+                    <div class="text" style="text-align:center;">HTML 5</div>
+                </div>
+                <div class="col-6  col-md-3 logo ">
+                    <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png" alt=""
+                        style="height:100px;width:100px;object-fit: cover; ">
+                    <div class="text" style="text-align:center;">CSS 3</div>
+                </div>
+                <div class="col-6 col-md-3  logo ">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/480px-Bootstrap_logo.svg.png"
+                        alt="" style="height:100px;width:100px;object-fit: cover;">
+                    <div class="text" style="text-align:center;">Bootstrap</div>
+                </div>
+                <div class="col-6 col-md-3  logo ">
+                    <img src="https://cdn.iconscout.com/icon/free/png-512/php-28-226043.png" alt=""
+                        style="height:100px;width:100px;object-fit: cover;border-radius:100% ;">
+                    <div class="text" style="text-align:center;">PHP</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myprojects" style="background:#168280;">
+        <div class="container p-5 ">
+            <h1 style="text-align:center;font-weight:bold;color: white;">My projects</h1>
+            <div class="d-flex flex-wrap project_cards justify-content-around p-1">
+                <div class="card  my-3" style="width: 18rem;">
+                    <div class="image-div">
+                        <img class="card-img-top"
+                            src="https://i.pinimg.com/originals/5c/00/4a/5c004ace26d1c17cb56ed851a2aef602.jpg"
+                            alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h4 style="text-align:center;">Airline Reservation System</h4>
+                        <p class="card-text" style="text-align:justify">I made a fully flexible ARS for both admin and
+                            user side using html,css,bootstrap,mysql and php for my college project. The user can create
+                            an account and book flight tickets while the admin can access the database and add/remove
+                            flight data. It is also responsive (mobile friendly).</p>
+                    </div>
+                </div>
+                <div class="card my-3 " style="width: 18rem;">
+                    <div class="image-div">
+                        <img class="card-img-top"
+                            src="https://img.poki.com/cdn-cgi/image/quality=78,width=600,height=600,fit=cover,g=0.5x0.5,f=auto/85535e05d1f130b16751c8308cfbb19b.png"
+                            alt="Card image cap">
+                    </div>
+                    <div class="card-body ">
+                        <h4 style="text-align:center;">Tic Tac Toe</h4>
+                        <p class="card-text " style="text-align:justify">I made a tic tac toe game using python where
+                            the AI is clever enough to predict all possible combinations and play wisely. However the
+                            cleverness of AI can be decreased to three levels: hard, medium, easy.</p>
+                    </div>
+                </div>
+                <div class="card my-3" style="width: 18rem;">
+                    <div class="image-div">
+                        <img class="card-img-top" src="https://i.morioh.com/a82c5f3532.png" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h4 style="text-align:center;">Web Scraping</h4>
+                        <p class="card-text" style="text-align:justify">Web scraping is a total new topic for me. I
+                            haven't done any big projects on the same. However I can scrap some data from e-commerce
+                            websites like Amazon, Flipkart etc. using beautifulsoup4. I would like to dive more deep in
+                            this topic though. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myhobbies">
+        <h1 class="mt-4" style="text-align:center; font-weight:Bold;">My Hobbies</h1>
+        <div class="container hobby p-4">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel "
+                style="border:2px!important;">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100"
+                            src="https://www.izotope.com/en/learn/how-to-master-a-song-from-start-to-finish/_jcr_content/root/sectioncontainer_image/flexcontainer/image.coreimg.82.1280.png/1570728030732/how-master-song-start-finish-featured-image.png"
+                            alt="First slide">
+                        <div class="carousel-caption  d-md-block">
+                            <h5>Making music</h5>
+                            <p>I make EDM music in FL studio</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://img.gadgethacks.com/img/32/81/63521678445695/0/trick-listening-youtube-background-your-iphone-ipad.1280x600.jpg"
+                            alt="Second slide">
+                        <div class="carousel-caption  d-md-block">
+                            <h5>Listening to music</h5>
+                            <p>When I'm not coding I'm listening to music. Huge fan of KSHMR, Nurko, Krewella and Alan
+                                walker</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://i.redd.it/u2mssr53oja01.png" alt="Third slide">
+                        <div class="carousel-caption  d-md-block">
+                            <h5>Gaming</h5>
+                            <p>Not a serious gamer but I game at times</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="contactme" class="bg-light">
+        <h1 class="p-5" style="font-weight:bold; text-align:center;">Contact Me</h1>
+        <h4 class="px-1" style="text-align:center;">Feel free to contact me any time in any below social sites. I am
+            active all the time :)</h4>
+        <div class="container px-5 pt-3 pb-2" style="text-align:center;">
+            <div class="social-links p-3">
+                <h5 class="p-1"><strong>Linked In</strong>: <a target="_blank"
+                        href="https://www.linkedin.com/in/laxman-balaraman-b9b9341aa/"
+                        style="color:teal; font-weight:400; word-wrap: break-word;">https://www.linkedin.com/in/laxman-balaraman-b9b9341aa/</a>
+                </h5>
+                <h5 class="p-1"> <strong>Gmail</strong>: laxmanbalaraman@gmail.com </h5>
+                <h5 class="p-1"><strong>Instagram</strong>: <a target="_blank"
+                        href="https://www.instagram.com/laxman_0812/"
+                        style="color:teal; font-weight:400; word-wrap: break-word;">https://www.instagram.com/laxman_0812/</a>
+                </h5>
+            </div>
+        </div>
+        <div class="butn" style="text-align:center;">
+            <button class="btn btn-teal mb-5 mt-0" name="button"> <a target="_blank"
+                    href="https://www.linkedin.com/in/laxman-balaraman-b9b9341aa/ " style="color:white;">Hire me</a>
+            </button>
+        </div>
+    </div>
+    <div id="footer" style="background: teal;">
+        <div class="p-2" class="madetext">
+            <h6 class="m-0" style="text-align:center; font-weight: 500;color:white;">Designed with <i
+                    class="fa fa-heart" aria-hidden="true"></i> by Laxman B © 2020 </h6>
+        </div>
+    </div>
+</body>
+
+</html>
